@@ -1,0 +1,27 @@
+name: Release
+on:
+  push:
+    tags:
+      - v*.*.*
+jobs:
+  release:
+    permissions:
+      id-token: write
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install -e .[release]
+      - name: Build release
+        run: python -m build --sdist --wheel
+      - id: extract-release-notes
+        uses: ffurrer2/extract-release-notes@v1
+      - uses: softprops/action-gh-release@v1
+        with:
+          body: ${{ steps.extract-release-notes.outputs.release_notes }}
+          files: dist/*
+      - uses: pypa/gh-action-pypi-publish@release/v1

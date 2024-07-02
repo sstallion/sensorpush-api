@@ -7,4 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-[Unreleased]: https://github.com/sstallion/sensorpush-api/compare/HEAD...HEAD
+## [1.0.0] - 2024-07-02
+
+Initial release
+
+[Unreleased]: https://github.com/sstallion/sensorpush-api/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/sstallion/sensorpush-api/releases/tag/v1.0.0

@@ -1,4 +1,5 @@
 {
+  "library": "asyncio",
   "packageName": "sensorpush_api",
   "projectName": "sensorpush-api",
   "packageVersion": "1.0.0"

@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0] - 2024-08-22
+
 - Migrated to [openapi-generator](https://github.com/OpenAPITools/openapi-generator)
 - Added support for `asyncio`
 
@@ -14,5 +16,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Initial release
 
-[Unreleased]: https://github.com/sstallion/sensorpush-api/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/sstallion/sensorpush-api/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/sstallion/sensorpush-api/releases/tag/v2.0.0
 [1.0.0]: https://github.com/sstallion/sensorpush-api/releases/tag/v1.0.0

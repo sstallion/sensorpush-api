@@ -28,7 +28,7 @@ setup(name=options['projectName'],
       url="https://www.sensorpush.com/gateway-cloud-api",
       packages=find_packages(),
       classifiers=[
-          'Development Status :: 5 - Production/Stable'
+          'Development Status :: 5 - Production/Stable',
           'Environment :: Web Environment',
           'Intended Audience :: Developers',
           'License :: Other/Proprietary License',

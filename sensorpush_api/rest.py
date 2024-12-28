@@ -52,29 +52,31 @@ class RESTClientObject:
         if maxsize is None:
             maxsize = configuration.connection_pool_maxsize
 
-        ssl_context = ssl.create_default_context(cafile=configuration.ssl_ca_cert)
-        if configuration.cert_file:
-            ssl_context.load_cert_chain(
-                configuration.cert_file, keyfile=configuration.key_file
-            )
-
-        if not configuration.verify_ssl:
-            ssl_context.check_hostname = False
-            ssl_context.verify_mode = ssl.CERT_NONE
-
-        connector = aiohttp.TCPConnector(
-            limit=maxsize,
-            ssl=ssl_context
-        )
-
         self.proxy = configuration.proxy
         self.proxy_headers = configuration.proxy_headers
 
-        # https pool manager
-        self.pool_manager = aiohttp.ClientSession(
-            connector=connector,
-            trust_env=trust_env,
-        )
+        self.pool_manager = configuration.pool_manager
+        if self.pool_manager is None:
+            ssl_context = ssl.create_default_context(cafile=configuration.ssl_ca_cert)
+            if configuration.cert_file:
+                ssl_context.load_cert_chain(
+                    configuration.cert_file, keyfile=configuration.key_file
+                )
+
+            if not configuration.verify_ssl:
+                ssl_context.check_hostname = False
+                ssl_context.verify_mode = ssl.CERT_NONE
+
+            connector = aiohttp.TCPConnector(
+                limit=maxsize,
+                ssl=ssl_context
+            )
+
+            # https pool manager
+            self.pool_manager = aiohttp.ClientSession(
+                connector=connector,
+                trust_env=trust_env,
+            )
 
     async def close(self):
         await self.pool_manager.close()

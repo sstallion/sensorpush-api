@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Added support for pre-configured pool managers
+
 ## [2.0.0] - 2024-08-22
 
 - Migrated to [openapi-generator](https://github.com/OpenAPITools/openapi-generator)

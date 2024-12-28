@@ -84,6 +84,7 @@ conf = sensorpush_api.Configuration(
                  server_index=None, server_variables=None,
                  server_operation_index=None, server_operation_variables=None,
                  ssl_ca_cert=None,
+                 pool_manager=None
                  ) -> None:
         """Constructor
         """
@@ -197,6 +198,10 @@ conf = sensorpush_api.Configuration(
 
         self.date_format = "%Y-%m-%d"
         """date format
+        """
+
+        self.pool_manager = pool_manager
+        """Provide a pre-configured pool manager
         """
 
     def __deepcopy__(self, memo):

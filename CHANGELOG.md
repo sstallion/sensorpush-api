@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.1.2] - 2025-03-31
+
+### Fixed
+
+- Removed unnecessary dependencies ([dotlambda](https://github.com/dotlambda))
+
 ## [2.1.1] - 2024-12-29
 
 ### Fixed
@@ -26,7 +32,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Initial release
 
-[Unreleased]: https://github.com/sstallion/sensorpush-api/compare/v2.1.1...HEAD
+[Unreleased]: https://github.com/sstallion/sensorpush-api/compare/v2.1.2...HEAD
+[2.1.2]: https://github.com/sstallion/sensorpush-api/releases/tag/v2.1.2
 [2.1.1]: https://github.com/sstallion/sensorpush-api/releases/tag/v2.1.1
 [2.1.0]: https://github.com/sstallion/sensorpush-api/releases/tag/v2.1.0
 [2.0.0]: https://github.com/sstallion/sensorpush-api/releases/tag/v2.0.0

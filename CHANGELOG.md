@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Relaxed urllib3 constraints ([epenet](https://github.com/epenet))
+
 ## [2.1.2] - 2025-03-31
 
 ### Fixed

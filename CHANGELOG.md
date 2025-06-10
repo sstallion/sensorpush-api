@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.1.3] - 2025-06-10
+
 ### Fixed
 
 - Relaxed urllib3 constraints ([epenet](https://github.com/epenet))
@@ -36,7 +38,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Initial release
 
-[Unreleased]: https://github.com/sstallion/sensorpush-api/compare/v2.1.2...HEAD
+[Unreleased]: https://github.com/sstallion/sensorpush-api/compare/v2.1.3...HEAD
+[2.1.3]: https://github.com/sstallion/sensorpush-api/releases/tag/v2.1.3
 [2.1.2]: https://github.com/sstallion/sensorpush-api/releases/tag/v2.1.2
 [2.1.1]: https://github.com/sstallion/sensorpush-api/releases/tag/v2.1.1
 [2.1.0]: https://github.com/sstallion/sensorpush-api/releases/tag/v2.1.0

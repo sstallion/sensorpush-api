@@ -27,7 +27,7 @@ setup(name=options["projectName"],
       author="Steven Stallion",
       author_email="sstallion@gmail.com",
       url="https://github.com/sstallion/sensorpush-api",
-      packages=find_packages(),
+      packages=find_packages(include=["sensorpush_api*"]),
       classifiers=[
           "Development Status :: 5 - Production/Stable",
           "Environment :: Web Environment",

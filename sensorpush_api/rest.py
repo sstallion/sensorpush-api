@@ -177,8 +177,8 @@ class RESTClientObject:
             data = await r.read()
             r = RESTResponse(r, data)
 
-            # log response body
-            logger.debug("response body: %s", r.data)
+            # Response bodies may contain OAuth credentials, including on errors.
+            logger.debug("response status: %s", r.status)
 
             if not 200 <= r.status <= 299:
                 raise ApiException(http_resp=r)
